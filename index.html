@@ -21,8 +21,9 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <p>This is the crystal game.  Each crystal has a different randomized point value.  Clicking a crystal will award you with its point value.  Upon clicking a crystal
-                it will randomize all of the crystals values again.  To win you must obtain an exact point value without going over.
+            <p>This is the crystal game. Each crystal has a different randomized point value. Upon clicking a crystal, it will
+                award you with its point value. To win you must obtain an exact point value without
+                going over.  If you go over you lose.
             </p>
         </div>
     </div>
@@ -30,25 +31,37 @@
 
         <div class="col-md-2"></div>
         <div class="col-md-2 bg-danger">
-            <img id="crystal-1" alt="See the source image"
-                src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg">
+            <button id="crystal-1"> <img alt="See the source image"
+                    src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg"></button>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-2 bg-primary">
-            <img id="crystal-2" alt="See the source image"
-                src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg">
-            </div>
+            <button id="crystal-2">
+                <img id="crystal-2" alt="See the source image"
+                    src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg"></button>
+        </div>
     </div>
-    <div id="crystal-3" class="row" style="padding-top: 75px;">
+    <div class="row" style="padding-top: 75px;">
         <div class="col-md-2"></div>
         <div class="col-md-2 bg-success">
-            <img alt="See the source image"
-                src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg">
+            <button id="crystal-3">
+                <img id="crystal-3" alt="See the source image"
+                    src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg"></button>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-2 bg-info">
-            <img id="crystal-4" alt="See the source image"
-                src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg">
+            <button id="crystal-4">
+                <img id="crystal-4" alt="See the source image"
+                    src="https://www.crystal-energy.com/wp-content/uploads/2018/02/alexandrite-photo-6-300x300.jpg"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-4">
+            Wins: <span id="wins"></span><br>
+            Losses: <span id="loses"></span><br>
+            Your Current Score: <span id="currentScore"></span><br>
+            Score Target: <span id="scoreTarget"></span>
         </div>
     </div>
     <script src="assets/javascript/game.js"></script>
